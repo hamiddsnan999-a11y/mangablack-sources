@@ -1,5 +1,5 @@
 {
- "version": "2026-11-07j",
+ "version": "2026-11-08a",
  "sources": [
   {
    "id": "sparkmanga",
@@ -40,7 +40,7 @@
    "catalogUrl": "/",
    "searchUrl": "/?s={query}",
    "pagesItem": "img",
-   "catalogJson": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/azorafly.json?v=2026-11-07j",
+   "catalogJson": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/azorafly.json?v=2026-11-08a",
    "latestUrl": "https://azora-sync.hamiddsnan24.workers.dev/latest"
   },
   {
@@ -66,7 +66,7 @@
    "kind": "dilar",
    "catalogUrl": "https://dilar.tube/api/series?page={page}&limit=60",
    "searchUrl": "https://dilar.tube/api/series/search?q={query}",
-   "catalogJson": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/dilar.json?v=2026-11-07j"
+   "catalogJson": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/dilar.json?v=2026-11-08a"
   },
   {
    "id": "mangalek",
@@ -83,7 +83,7 @@
    "searchUrl": "/?s={query}&post_type=wp-manga",
    "chaptersItem": ".wp-manga-chapter a, .chapter-link a",
    "pagesItem": ".reading-content img, .page-break img, img.wp-manga-chapter-img",
-   "catalogJson": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/mangalek.json?v=2026-11-07j"
+   "catalogJson": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/mangalek.json?v=2026-11-08a"
   },
   {
    "id": "mangalink",
@@ -100,7 +100,7 @@
    "searchUrl": "/?s={query}&post_type=wp-manga",
    "chaptersItem": ".wp-manga-chapter a, .chapter-link a",
    "pagesItem": ".reading-content img, .page-break img, img.wp-manga-chapter-img",
-   "catalogJson": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/mangalink.json?v=2026-11-07j"
+   "catalogJson": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/mangalink.json?v=2026-11-08a"
   },
   {
    "id": "mangalionz",
@@ -117,7 +117,7 @@
    "searchUrl": "/?s={query}&post_type=wp-manga",
    "chaptersItem": ".wp-manga-chapter a, .chapter-link a",
    "pagesItem": ".reading-content img, .page-break img, img.wp-manga-chapter-img",
-   "catalogJson": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/mangalionz.json?v=2026-11-07j"
+   "catalogJson": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/mangalionz.json?v=2026-11-08a"
   },
   {
    "id": "mangastarz",
@@ -134,7 +134,7 @@
    "searchUrl": "/?s={query}&post_type=wp-manga",
    "chaptersItem": ".wp-manga-chapter a, .chapter-link a",
    "pagesItem": ".reading-content img, .page-break img, img.wp-manga-chapter-img",
-   "catalogJson": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/mangastarz.json?v=2026-11-07j"
+   "catalogJson": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/mangastarz.json?v=2026-11-08a"
   },
   {
    "id": "hizomanga",
@@ -151,7 +151,7 @@
    "searchUrl": "/?s={query}&post_type=wp-manga",
    "chaptersItem": ".wp-manga-chapter a, .chapter-link a",
    "pagesItem": ".reading-content img, .page-break img, img.wp-manga-chapter-img",
-   "catalogJson": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/hizomanga.json?v=2026-11-07j"
+   "catalogJson": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/hizomanga.json?v=2026-11-08a"
   }
  ]
 }

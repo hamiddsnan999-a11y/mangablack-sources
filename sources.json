@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-07",
+  "version": "2026-11-07b",
   "sources": [
     {
       "id": "sparkmanga",
@@ -42,10 +42,10 @@
       "pagesItem": "img"
     },
     {
-      "id": "lekmanga",
-      "name": "ليك مانجا",
-      "base": "https://lekmanga.net",
-      "lang": "ar",
+      "id": "mangaread",
+      "name": "MangaRead",
+      "base": "https://mangaread.org",
+      "lang": "en",
       "kind": "html",
       "catalogUrl": "/manga/page/{page}/?m_orderby=latest",
       "catalogItem": ".page-item-detail, .c-tabs-item__content",
@@ -55,16 +55,6 @@
       "searchUrl": "/?s={query}&post_type=wp-manga",
       "chaptersItem": ".wp-manga-chapter a, .chapter-link a",
       "pagesItem": ".reading-content img, .page-break img"
-    },
-    {
-      "id": "olympustaff",
-      "name": "أولمبس تيم",
-      "base": "https://olympustaff.com",
-      "lang": "ar",
-      "kind": "generic",
-      "catalogUrl": "/",
-      "searchUrl": "/?s={query}",
-      "pagesItem": "img"
     }
   ]
 }

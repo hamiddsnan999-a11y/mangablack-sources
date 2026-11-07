@@ -1,5 +1,5 @@
 {
- "version": "2026-11-07h",
+ "version": "2026-11-07i",
  "sources": [
   {
    "id": "sparkmanga",
@@ -83,7 +83,7 @@
    "searchUrl": "/?s={query}&post_type=wp-manga",
    "chaptersItem": ".wp-manga-chapter a, .chapter-link a",
    "pagesItem": ".reading-content img, .page-break img, img.wp-manga-chapter-img",
-   "catalogJson": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/mangalek.json"
+   "catalogJson": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/mangalek.json?v=2026-11-07i"
   },
   {
    "id": "mangalink",
@@ -100,7 +100,7 @@
    "searchUrl": "/?s={query}&post_type=wp-manga",
    "chaptersItem": ".wp-manga-chapter a, .chapter-link a",
    "pagesItem": ".reading-content img, .page-break img, img.wp-manga-chapter-img",
-   "catalogJson": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/mangalink.json"
+   "catalogJson": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/mangalink.json?v=2026-11-07i"
   },
   {
    "id": "mangalionz",
@@ -117,7 +117,7 @@
    "searchUrl": "/?s={query}&post_type=wp-manga",
    "chaptersItem": ".wp-manga-chapter a, .chapter-link a",
    "pagesItem": ".reading-content img, .page-break img, img.wp-manga-chapter-img",
-   "catalogJson": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/mangalionz.json"
+   "catalogJson": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/mangalionz.json?v=2026-11-07i"
   },
   {
    "id": "mangastarz",
@@ -134,7 +134,7 @@
    "searchUrl": "/?s={query}&post_type=wp-manga",
    "chaptersItem": ".wp-manga-chapter a, .chapter-link a",
    "pagesItem": ".reading-content img, .page-break img, img.wp-manga-chapter-img",
-   "catalogJson": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/mangastarz.json"
+   "catalogJson": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/mangastarz.json?v=2026-11-07i"
   },
   {
    "id": "hizomanga",
@@ -151,7 +151,7 @@
    "searchUrl": "/?s={query}&post_type=wp-manga",
    "chaptersItem": ".wp-manga-chapter a, .chapter-link a",
    "pagesItem": ".reading-content img, .page-break img, img.wp-manga-chapter-img",
-   "catalogJson": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/hizomanga.json"
+   "catalogJson": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/hizomanga.json?v=2026-11-07i"
   }
  ]
 }

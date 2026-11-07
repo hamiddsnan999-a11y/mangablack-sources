@@ -1,5 +1,5 @@
 {
- "version": "2026-11-07d",
+ "version": "2026-11-07e",
  "sources": [
   {
    "id": "sparkmanga",
@@ -67,6 +67,36 @@
    "catalogUrl": "https://dilar.tube/api/series?page={page}&limit=60",
    "searchUrl": "https://dilar.tube/api/series/search?q={query}",
    "catalogJson": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/dilar.json"
+  },
+  {
+   "id": "arbxcomix",
+   "name": "أربكس كوميكس",
+   "base": "https://arbxcomix.com",
+   "lang": "ar",
+   "kind": "html",
+   "catalogUrl": "/manga/page/{page}/",
+   "catalogItem": ".page-item-detail, .c-tabs-item__content",
+   "catalogTitle": ".post-title h3 a, .h4 a",
+   "catalogCover": "img",
+   "catalogLink": ".post-title h3 a, .h4 a",
+   "searchUrl": "/?s={query}&post_type=wp-manga",
+   "chaptersItem": ".wp-manga-chapter a, .chapter-link a",
+   "pagesItem": ".reading-content img, .page-break img"
+  },
+  {
+   "id": "nijitranslations",
+   "name": "نيجي ترانسليشنز",
+   "base": "https://niji-translations.com",
+   "lang": "ar",
+   "kind": "html",
+   "catalogUrl": "/manga/page/{page}/",
+   "catalogItem": ".page-item-detail, .c-tabs-item__content",
+   "catalogTitle": ".post-title h3 a, .h4 a",
+   "catalogCover": "img",
+   "catalogLink": ".post-title h3 a, .h4 a",
+   "searchUrl": "/?s={query}&post_type=wp-manga",
+   "chaptersItem": ".wp-manga-chapter a, .chapter-link a",
+   "pagesItem": ".reading-content img, .page-break img"
   }
  ]
 }

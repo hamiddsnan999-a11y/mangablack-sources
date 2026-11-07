@@ -1,61 +1,62 @@
 {
-  "version": "2026-11-07c",
-  "sources": [
-    {
-      "id": "sparkmanga",
-      "name": "سبارك مانجا",
-      "base": "https://sparkmanga.net",
-      "lang": "ar",
-      "kind": "html",
-      "catalogUrl": "/manga/page/{page}/",
-      "catalogItem": ".page-item-detail, .c-tabs-item__content",
-      "catalogTitle": ".post-title h3 a, .h4 a",
-      "catalogCover": "img",
-      "catalogLink": ".post-title h3 a, .h4 a",
-      "searchUrl": "/?s={query}",
-      "chaptersItem": ".wp-manga-chapter a, .chapter-link a",
-      "pagesItem": ".reading-content img, .page-break img"
-    },
-    {
-      "id": "3asq",
-      "name": "عرب سكان",
-      "base": "https://3asq.online",
-      "lang": "ar",
-      "kind": "html",
-      "catalogUrl": "/manga/page/{page}/?m_orderby=latest",
-      "catalogItem": ".page-item-detail, .c-tabs-item__content",
-      "catalogTitle": ".post-title h3 a, .h4 a",
-      "catalogCover": "img",
-      "catalogLink": ".post-title h3 a, .h4 a",
-      "searchUrl": "/?s={query}&post_type=wp-manga",
-      "chaptersItem": ".wp-manga-chapter a, .chapter-link a",
-      "pagesItem": ".reading-content img, .page-break img"
-    },
-    {
-      "id": "azorafly",
-      "name": "أزورا مون",
-      "base": "https://azorafly.com",
-      "lang": "ar",
-      "kind": "generic",
-      "catalogUrl": "/",
-      "searchUrl": "/?s={query}",
-      "pagesItem": "img",
-      "catalogJson": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/azorafly.json"
-    },
-    {
-      "id": "mangaread",
-      "name": "MangaRead",
-      "base": "https://mangaread.org",
-      "lang": "en",
-      "kind": "html",
-      "catalogUrl": "/manga/page/{page}/?m_orderby=latest",
-      "catalogItem": ".page-item-detail, .c-tabs-item__content",
-      "catalogTitle": ".post-title h3 a, .h4 a",
-      "catalogCover": "img",
-      "catalogLink": ".post-title h3 a, .h4 a",
-      "searchUrl": "/?s={query}&post_type=wp-manga",
-      "chaptersItem": ".wp-manga-chapter a, .chapter-link a",
-      "pagesItem": ".reading-content img, .page-break img"
-    }
-  ]
+ "version": "2026-11-07c",
+ "sources": [
+  {
+   "id": "sparkmanga",
+   "name": "سبارك مانجا",
+   "base": "https://sparkmanga.net",
+   "lang": "ar",
+   "kind": "html",
+   "catalogUrl": "/manga/page/{page}/",
+   "catalogItem": ".page-item-detail, .c-tabs-item__content",
+   "catalogTitle": ".post-title h3 a, .h4 a",
+   "catalogCover": "img",
+   "catalogLink": ".post-title h3 a, .h4 a",
+   "searchUrl": "/?s={query}",
+   "chaptersItem": ".wp-manga-chapter a, .chapter-link a",
+   "pagesItem": ".reading-content img, .page-break img"
+  },
+  {
+   "id": "3asq",
+   "name": "عرب سكان",
+   "base": "https://3asq.online",
+   "lang": "ar",
+   "kind": "html",
+   "catalogUrl": "/manga/page/{page}/?m_orderby=latest",
+   "catalogItem": ".page-item-detail, .c-tabs-item__content",
+   "catalogTitle": ".post-title h3 a, .h4 a",
+   "catalogCover": "img",
+   "catalogLink": ".post-title h3 a, .h4 a",
+   "searchUrl": "/?s={query}&post_type=wp-manga",
+   "chaptersItem": ".wp-manga-chapter a, .chapter-link a",
+   "pagesItem": ".reading-content img, .page-break img"
+  },
+  {
+   "id": "azorafly",
+   "name": "أزورا مون",
+   "base": "https://azorafly.com",
+   "lang": "ar",
+   "kind": "generic",
+   "catalogUrl": "/",
+   "searchUrl": "/?s={query}",
+   "pagesItem": "img",
+   "catalogJson": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/azorafly.json",
+   "latestUrl": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/azorafly-latest.json"
+  },
+  {
+   "id": "mangaread",
+   "name": "MangaRead",
+   "base": "https://mangaread.org",
+   "lang": "en",
+   "kind": "html",
+   "catalogUrl": "/manga/page/{page}/?m_orderby=latest",
+   "catalogItem": ".page-item-detail, .c-tabs-item__content",
+   "catalogTitle": ".post-title h3 a, .h4 a",
+   "catalogCover": "img",
+   "catalogLink": ".post-title h3 a, .h4 a",
+   "searchUrl": "/?s={query}&post_type=wp-manga",
+   "chaptersItem": ".wp-manga-chapter a, .chapter-link a",
+   "pagesItem": ".reading-content img, .page-break img"
+  }
+ ]
 }

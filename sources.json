@@ -1,0 +1,70 @@
+{
+  "version": "2026-11-07",
+  "sources": [
+    {
+      "id": "sparkmanga",
+      "name": "سبارك مانجا",
+      "base": "https://sparkmanga.net",
+      "lang": "ar",
+      "kind": "html",
+      "catalogUrl": "/manga/page/{page}/",
+      "catalogItem": ".page-item-detail, .c-tabs-item__content",
+      "catalogTitle": ".post-title h3 a, .h4 a",
+      "catalogCover": "img",
+      "catalogLink": ".post-title h3 a, .h4 a",
+      "searchUrl": "/?s={query}",
+      "chaptersItem": ".wp-manga-chapter a, .chapter-link a",
+      "pagesItem": ".reading-content img, .page-break img"
+    },
+    {
+      "id": "3asq",
+      "name": "عرب سكان",
+      "base": "https://3asq.online",
+      "lang": "ar",
+      "kind": "html",
+      "catalogUrl": "/manga/page/{page}/?m_orderby=latest",
+      "catalogItem": ".page-item-detail, .c-tabs-item__content",
+      "catalogTitle": ".post-title h3 a, .h4 a",
+      "catalogCover": "img",
+      "catalogLink": ".post-title h3 a, .h4 a",
+      "searchUrl": "/?s={query}&post_type=wp-manga",
+      "chaptersItem": ".wp-manga-chapter a, .chapter-link a",
+      "pagesItem": ".reading-content img, .page-break img"
+    },
+    {
+      "id": "azorafly",
+      "name": "أزورا مون",
+      "base": "https://azorafly.com",
+      "lang": "ar",
+      "kind": "generic",
+      "catalogUrl": "/",
+      "searchUrl": "/?s={query}",
+      "pagesItem": "img"
+    },
+    {
+      "id": "lekmanga",
+      "name": "ليك مانجا",
+      "base": "https://lekmanga.net",
+      "lang": "ar",
+      "kind": "html",
+      "catalogUrl": "/manga/page/{page}/?m_orderby=latest",
+      "catalogItem": ".page-item-detail, .c-tabs-item__content",
+      "catalogTitle": ".post-title h3 a, .h4 a",
+      "catalogCover": "img",
+      "catalogLink": ".post-title h3 a, .h4 a",
+      "searchUrl": "/?s={query}&post_type=wp-manga",
+      "chaptersItem": ".wp-manga-chapter a, .chapter-link a",
+      "pagesItem": ".reading-content img, .page-break img"
+    },
+    {
+      "id": "olympustaff",
+      "name": "أولمبس تيم",
+      "base": "https://olympustaff.com",
+      "lang": "ar",
+      "kind": "generic",
+      "catalogUrl": "/",
+      "searchUrl": "/?s={query}",
+      "pagesItem": "img"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
- "version": "2026-11-08a",
+ "version": "2026-11-08b",
  "sources": [
   {
    "id": "sparkmanga",
@@ -152,6 +152,22 @@
    "chaptersItem": ".wp-manga-chapter a, .chapter-link a",
    "pagesItem": ".reading-content img, .page-break img, img.wp-manga-chapter-img",
    "catalogJson": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/hizomanga.json?v=2026-11-08a"
+  },
+  {
+   "id": "manhuaplus",
+   "name": "ManhuaPlus",
+   "base": "https://manhuaplus.com",
+   "lang": "en",
+   "kind": "html",
+   "useWeb": true,
+   "catalogUrl": "/manga/page/{page}/",
+   "catalogItem": ".page-item-detail, .c-tabs-item__content",
+   "catalogTitle": ".post-title h3 a, .h4 a",
+   "catalogCover": "img",
+   "catalogLink": ".post-title h3 a, .h4 a",
+   "searchUrl": "/?s={query}&post_type=wp-manga",
+   "chaptersItem": ".wp-manga-chapter a, .chapter-link a",
+   "pagesItem": ".reading-content img, .page-break img"
   }
  ]
 }

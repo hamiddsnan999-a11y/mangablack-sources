@@ -1,5 +1,5 @@
 {
- "version": "2026-11-07c",
+ "version": "2026-11-07d",
  "sources": [
   {
    "id": "sparkmanga",
@@ -57,6 +57,16 @@
    "searchUrl": "/?s={query}&post_type=wp-manga",
    "chaptersItem": ".wp-manga-chapter a, .chapter-link a",
    "pagesItem": ".reading-content img, .page-break img"
+  },
+  {
+   "id": "dilartube",
+   "name": "ديلار",
+   "base": "https://dilar.tube",
+   "lang": "ar",
+   "kind": "dilar",
+   "catalogUrl": "https://dilar.tube/api/series?page={page}&limit=60",
+   "searchUrl": "https://dilar.tube/api/series/search?q={query}",
+   "catalogJson": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/dilar.json"
   }
  ]
 }

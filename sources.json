@@ -41,7 +41,7 @@
    "searchUrl": "/?s={query}",
    "pagesItem": "img",
    "catalogJson": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/azorafly.json",
-   "latestUrl": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/azorafly-latest.json"
+   "latestUrl": "https://azora-sync.hamiddsnan24.workers.dev/latest"
   },
   {
    "id": "mangaread",

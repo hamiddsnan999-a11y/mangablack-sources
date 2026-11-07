@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-07b",
+  "version": "2026-11-07c",
   "sources": [
     {
       "id": "sparkmanga",
@@ -39,7 +39,8 @@
       "kind": "generic",
       "catalogUrl": "/",
       "searchUrl": "/?s={query}",
-      "pagesItem": "img"
+      "pagesItem": "img",
+      "catalogJson": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/catalogs/azorafly.json"
     },
     {
       "id": "mangaread",

@@ -1,5 +1,5 @@
 {
- "version": "2026-11-08b",
+ "version": "2026-11-11a",
  "sources": [
   {
    "id": "sparkmanga",
@@ -168,6 +168,96 @@
    "searchUrl": "/?s={query}&post_type=wp-manga",
    "chaptersItem": ".wp-manga-chapter a, .chapter-link a",
    "pagesItem": ".reading-content img, .page-break img"
+  },
+  {
+   "id": "anyonemanga",
+   "name": "أني مانجا",
+   "base": "https://anyonemanga.com",
+   "kind": "html",
+   "lang": "ar",
+   "catalogUrl": "/manga/page/{page}/",
+   "catalogItem": ".page-item-detail, .c-tabs-item__content",
+   "catalogTitle": ".post-title h3 a, .h4 a",
+   "catalogCover": "img",
+   "catalogLink": ".post-title h3 a, .h4 a",
+   "searchUrl": "/?s={query}",
+   "chaptersItem": ".wp-manga-chapter a, .chapter-link a",
+   "pagesItem": ".reading-content img, .page-break img"
+  },
+  {
+   "id": "detectiveconanar",
+   "name": "شبكة كونان العربية",
+   "base": "https://manga.detectiveconanar.com",
+   "kind": "html",
+   "lang": "ar",
+   "catalogUrl": "/manga/page/{page}/",
+   "catalogItem": ".page-item-detail, .c-tabs-item__content",
+   "catalogTitle": ".post-title h3 a, .h4 a",
+   "catalogCover": "img",
+   "catalogLink": ".post-title h3 a, .h4 a",
+   "searchUrl": "/?s={query}",
+   "chaptersItem": ".wp-manga-chapter a, .chapter-link a",
+   "pagesItem": ".reading-content img, .page-break img"
+  },
+  {
+   "id": "nijitranslations",
+   "name": "نيجي ترانسليشنز",
+   "base": "https://niji-translations.com",
+   "kind": "html",
+   "lang": "ar",
+   "catalogUrl": "/manga/page/{page}/",
+   "catalogItem": ".page-item-detail, .c-tabs-item__content",
+   "catalogTitle": ".post-title h3 a, .h4 a",
+   "catalogCover": "img",
+   "catalogLink": ".post-title h3 a, .h4 a",
+   "searchUrl": "/?s={query}",
+   "chaptersItem": ".wp-manga-chapter a, .chapter-link a",
+   "pagesItem": ".reading-content img, .page-break img"
+  },
+  {
+   "id": "lavascans",
+   "name": "لافا سكانز",
+   "base": "https://lavascans.com",
+   "kind": "html",
+   "lang": "ar",
+   "catalogUrl": "/manga/page/{page}/",
+   "catalogItem": ".listupd .bs .bsx, .utao .uta .imgu, .listo .bs .bsx",
+   "catalogTitle": ".tt, .ntitle, .bigor .tt",
+   "catalogCover": "img",
+   "catalogLink": "a",
+   "searchUrl": "/?s={query}",
+   "chaptersItem": "#chapterlist li a, .bxcl li a, .eplister li a",
+   "pagesItem": "#readerarea img, .reading-content img"
+  },
+  {
+   "id": "hijala",
+   "name": "هيجالا",
+   "base": "https://hijala.com",
+   "kind": "html",
+   "lang": "ar",
+   "catalogUrl": "/manga/page/{page}/",
+   "catalogItem": ".listupd .bs .bsx, .utao .uta .imgu, .listo .bs .bsx",
+   "catalogTitle": ".tt, .ntitle, .bigor .tt",
+   "catalogCover": "img",
+   "catalogLink": "a",
+   "searchUrl": "/?s={query}",
+   "chaptersItem": "#chapterlist li a, .bxcl li a, .eplister li a",
+   "pagesItem": "#readerarea img, .reading-content img"
+  },
+  {
+   "id": "areamanga",
+   "name": "أريا مانجا",
+   "base": "https://ar.kenmanga.com",
+   "kind": "html",
+   "lang": "ar",
+   "catalogUrl": "/manga/page/{page}/",
+   "catalogItem": ".listupd .bs .bsx, .utao .uta .imgu, .listo .bs .bsx",
+   "catalogTitle": ".tt, .ntitle, .bigor .tt",
+   "catalogCover": "img",
+   "catalogLink": "a",
+   "searchUrl": "/?s={query}",
+   "chaptersItem": "#chapterlist li a, .bxcl li a, .eplister li a",
+   "pagesItem": "#readerarea img, .reading-content img"
   }
  ]
 }

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "spark",
+      "name": "سبارك مانجا",
+      "lang": "ar",
+      "version": 1,
+      "script": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/scripts/spark.js"
+    }
+  ]
+}

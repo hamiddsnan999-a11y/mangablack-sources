@@ -6,17 +6,48 @@ var source = {
   name: "أزورا",
   lang: "ar",
   baseUrl: "https://azorafly.com",
-  version: 2
+  version: 3
 };
 
 var API = "https://api.azorafly.com/api";
 
-// The site's own seriesType -> app type. Anything else (novels, unknown) -> "" so the app shows "غير معروف".
-function mapType(t) {
-  t = (t || "").toString().toUpperCase();
-  if (t === "MANHWA") return "manhwa";
-  if (t === "MANHUA") return "manhua";
-  if (t === "MANGA") return "manga";
+// The site's own seriesType is NOT reliable: it says MANHWA for almost everything (about 1 in 6 are really manga, manhua,
+// webtoon or comics). So the type is only shown when it is confirmed, otherwise it stays unknown (no guessing):
+//   1) a verified map (slug -> type) built from MangaTime, which labels every work with its real type; or
+//   2) an explicit type tag the work itself carries (مانها / مانجا / مانهوا / ويبتون / كوميكس).
+var TYPE_MAP_URL = "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/scripts/azora_types.json";
+var _typeMap = null;
+function typeMap() {
+  if (_typeMap) return _typeMap;
+  try {
+    var r = fetch(TYPE_MAP_URL);
+    _typeMap = r.status === 200 ? JSON.parse(r.text) : {};
+  } catch (e) { _typeMap = {}; }
+  return _typeMap;
+}
+var TAG_TYPES = { "مانجا": "manga", "مانها": "manhua", "مانهوا": "manhwa", "ويبتون": "webtoon", "كوميكس": "comic", "كومكس": "comic" };
+function typeFromTags(genres) {
+  var found = {};
+  var n = 0;
+  for (var i = 0; i < (genres || []).length; i++) {
+    var t = TAG_TYPES[((genres[i].name || genres[i]) + "").trim()];
+    if (t && !found[t]) { found[t] = true; n++; }
+  }
+  if (n !== 1) return "";
+  for (var k in found) return k;
+  return "";
+}
+// A work tagged both a country type and "ويبتون" (a format, not an origin): the country type wins.
+function resolveType(slug, genres) {
+  var m = typeMap()[slug];
+  if (m) return m;
+  var names = [];
+  for (var i = 0; i < (genres || []).length; i++) names.push(((genres[i].name || genres[i]) + "").trim());
+  var origin = [];
+  for (var j = 0; j < names.length; j++) if (names[j] === "مانجا" || names[j] === "مانها" || names[j] === "مانهوا") origin.push(TAG_TYPES[names[j]]);
+  var uniq = origin.filter(function (v, i2) { return origin.indexOf(v) === i2; });
+  if (uniq.length === 1) return uniq[0];
+  if (uniq.length === 0) return typeFromTags(genres);
   return "";
 }
 
@@ -69,7 +100,7 @@ function cardOf(p) {
     slug: p.slug,
     postId: String(p.id),
     cover: p.featuredImage || "",
-    type: mapType(p.seriesType),
+    type: resolveType(p.slug, p.genres),
     latest: latest
   };
 }
@@ -150,7 +181,7 @@ function details(url) {
     cover: p.featuredImage || "",
     description: stripHtml(p.postContent),
     genres: genreNames(p.genres),
-    type: mapType(p.seriesType),
+    type: resolveType(p.slug, p.genres),
     author: (p.author || "").trim(),
     artist: (p.artist || "").trim(),
     status: status,

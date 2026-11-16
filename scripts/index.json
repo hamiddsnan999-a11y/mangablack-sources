@@ -19,8 +19,15 @@
       "id": "azora",
       "name": "أزورا",
       "lang": "ar",
-      "version": 2,
+      "version": 3,
       "script": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/scripts/azora.js"
+    },
+    {
+      "id": "mangatime",
+      "name": "مانجا تايم",
+      "lang": "ar",
+      "version": 1,
+      "script": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/scripts/mangatime.js"
     }
   ]
 }

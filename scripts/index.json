@@ -40,6 +40,26 @@
       "icon": "https://mangatime.org/brand/v2/icons/icon-192.png",
       "color": "#22C7EE",
       "desc": "مانجا ومانهوا ومانها وويبتون وكوميكس بتصنيف دقيق"
+    },
+    {
+      "id": "3asq",
+      "name": "عاشق مانجا",
+      "lang": "ar",
+      "version": 1,
+      "script": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/scripts/3asq.js",
+      "icon": "https://3asq.online/wp-content/uploads/2021/06/cropped-ICON-192x192.png",
+      "color": "#F05A38",
+      "desc": "مكتبة مانجا ضخمة بنوع العمل مكتوب صراحة وتواريخ فصول دقيقة"
+    },
+    {
+      "id": "mnga4all",
+      "name": "مانجا فور أول",
+      "lang": "ar",
+      "version": 1,
+      "script": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/scripts/mnga4all.js",
+      "icon": "https://mnga4all.com/wp-content/uploads/2026/09/cropped-IMG_20260925_170031-192x192.png",
+      "color": "#C23B3B",
+      "desc": "مانجا ومانهوا بتحديثات متواصلة وفصول بالمئات"
     }
   ]
 }

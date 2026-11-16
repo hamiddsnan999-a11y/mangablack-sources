@@ -5,13 +5,33 @@ var source = {
   name: "مانجا ليك",
   lang: "ar",
   baseUrl: "https://mangalik.net",
-  version: 1
+  version: 2
 };
 
 var AR_MONTHS = {
   "يناير":0,"فبراير":1,"مارس":2,"أبريل":3,"ابريل":3,"مايو":4,"يونيو":5,
   "يوليو":6,"أغسطس":7,"اغسطس":7,"سبتمبر":8,"أكتوبر":9,"اكتوبر":9,"نوفمبر":10,"ديسمبر":11
 };
+
+
+// The site writes the work type only in its genre archives (مانهوا / مانها / مانجا), not on work pages, and only for
+// ~7% of its works. A prebuilt map (slug -> type) lives next to this script in the sources repo and is refreshed there.
+var TYPE_MAP_URL = "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/scripts/mangalik_types.json";
+var _typeMap = null;
+function typeMap() {
+  if (_typeMap) return _typeMap;
+  try {
+    var r = fetch(TYPE_MAP_URL);
+    _typeMap = r.status === 200 ? JSON.parse(r.text) : {};
+  } catch (e) { _typeMap = {}; }
+  return _typeMap;
+}
+function typeOfSlug(slug) {
+  if (!slug) return "";
+  var k = slug;
+  try { k = decodeURIComponent(slug); } catch (e) {}
+  return typeMap()[k.toLowerCase()] || "";
+}
 
 function abs(u) {
   u = (u || "").trim();
@@ -100,6 +120,7 @@ function parseCardsFromHtml(html, sel) {
     out.push({
       title: c.title, url: c.url, slug: c.slug, postId: c.postId,
       cover: coverFrom(c.imgSrc, c.imgSet),
+      type: typeOfSlug(c.slug),
       latest: latest
     });
   }
@@ -141,7 +162,7 @@ function search(query, page) {
     var slug = slugOf(u);
     if (!slug || seen[slug]) return;
     seen[slug] = true;
-    items.push({ title: a.text().trim(), url: u, slug: slug, postId: "", cover: coverOf(card.selectFirst("img")), latest: [] });
+    items.push({ title: a.text().trim(), url: u, slug: slug, postId: "", cover: coverOf(card.selectFirst("img")), type: typeOfSlug(slug), latest: [] });
   });
   return { items: items, hasMore: items.length >= 10 };
 }
@@ -186,7 +207,7 @@ function details(url) {
   }
   var desc = doc.selectFirst(".summary__content");
   // the site's explicit "النوع" field wins; otherwise the genre tags (مانهوا / مانها / مانجا); otherwise ""
-  var type = cleanType([typeField]) || cleanType(genres);
+  var type = cleanType([typeField]) || cleanType(genres) || typeOfSlug(slugOf(url));
   return {
     title: title ? title.text().trim() : "",
     cover: coverOf(doc.selectFirst(".summary_image img")),

@@ -70,6 +70,16 @@
       "icon": "https://mangatuk.com/site-icons/17ca9e84/apple-touch-icon.png",
       "color": "#3B82F6",
       "desc": "نوع العمل صريح (مانهوا/مانجا/مانها) وتواريخ فصول دقيقة. البحث بأسماء الأعمال فقط"
+    },
+    {
+      "id": "azoramoon",
+      "name": "أزورا مون",
+      "lang": "ar",
+      "version": 1,
+      "script": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/scripts/azoramoon.js",
+      "icon": "https://azoramoon.com/apple-touch-icon.png",
+      "color": "#7C5CFF",
+      "desc": "مانهوا ومانجا مترجمة (سكربت جاهز كما هو)"
     }
   ]
 }

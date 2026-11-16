@@ -6,7 +6,7 @@ var source = {
   name: "أزورا",
   lang: "ar",
   baseUrl: "https://azorafly.com",
-  version: 1
+  version: 2
 };
 
 var API = "https://api.azorafly.com/api";
@@ -96,11 +96,29 @@ function newestMs(card) {
   var t = card.latest.length ? Date.parse(card.latest[0].dateText) : 0;
   return isNaN(t) ? 0 : t;
 }
+
+// "Latest chapters": the site's own order counts LOCKED (paid) chapters too, so the first pages would be works whose
+// newest chapter we hide. We read the first LATEST_PAGES pages, keep works that have an open chapter, order them by
+// the real date of their newest OPEN chapter, then page the result for the app.
+var LATEST_PAGES = 8;
+var LATEST_PAGE_SIZE = 24;
 function latest(page) {
-  var r = listPage(page, "&orderBy=lastChapterAddedAt&order=desc");
-  // the site pins some works above their real position; order by the real newest open chapter
-  r.items.sort(function (a, b) { return newestMs(b) - newestMs(a); });
-  return r;
+  var all = [];
+  var seen = {};
+  for (var p = 1; p <= LATEST_PAGES; p++) {
+    var r;
+    try { r = listPage(p, "&orderBy=lastChapterAddedAt&order=desc"); } catch (e) { if (p === 1) throw e; break; }
+    for (var i = 0; i < r.items.length; i++) {
+      var c = r.items[i];
+      if (seen[c.postId] || !c.latest.length) continue;
+      seen[c.postId] = true;
+      all.push(c);
+    }
+    if (!r.hasMore) break;
+  }
+  all.sort(function (a, b) { return newestMs(b) - newestMs(a); });
+  var from = (page - 1) * LATEST_PAGE_SIZE;
+  return { items: all.slice(from, from + LATEST_PAGE_SIZE), hasMore: from + LATEST_PAGE_SIZE < all.length };
 }
 
 function search(query, page) {

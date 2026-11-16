@@ -6,12 +6,13 @@ var source = {
   name: "مانجا تايم",
   lang: "ar",
   baseUrl: "https://mangatime.org",
-  version: 1
+  version: 2
 };
 
 var API = "https://mangatime.org/api/trpc/";
 var PAGE = 24;   // the feed allows up to 50 per page
 
+// ملاحظة: الموقع يعطي وقت رفع الفصل للسيرفر لا وقت نشره (94% من الفصول رُفعت دفعات)، فلا نعرض أي وقت حتى لا نكذب.
 function trpc(proc, input) {
   var url = API + proc + "?batch=1&input=" + encodeURIComponent(JSON.stringify({ "0": { json: input } }));
   var r = fetch(url, { headers: { "Accept": "application/json", "X-MT-Platform": "web" } });
@@ -56,11 +57,11 @@ function cardOf(s) {
     latest.push({
       number: rc[i].number,
       url: chapterUrl(type, s.slug, rc[i].number),
-      dateText: rc[i].publishedAt || ""
+      dateText: ""
     });
   }
   if (!latest.length && s.latestChapter) {
-    latest.push({ number: s.latestChapter.number, url: chapterUrl(type, s.slug, s.latestChapter.number), dateText: s.latestChapter.releasedAt || "" });
+    latest.push({ number: s.latestChapter.number, url: chapterUrl(type, s.slug, s.latestChapter.number), dateText: "" });
   }
   latest.sort(function (a, b) { return b.number - a.number; });
   return {
@@ -105,7 +106,7 @@ function search(query, page) {
       postId: String(s.id),
       cover: abs(s.coverUrl),
       type: type,
-      latest: s.latestChapter ? [{ number: s.latestChapter, url: chapterUrl(type, s.slug, s.latestChapter), dateText: s.updatedAt || "" }] : []
+      latest: s.latestChapter ? [{ number: s.latestChapter, url: chapterUrl(type, s.slug, s.latestChapter), dateText: "" }] : []
     });
   }
   return { items: items, hasMore: false };
@@ -161,7 +162,7 @@ function chapters(url, mangaId) {
       number: n,
       title: (c.title || "").trim(),
       url: chapterUrl(typ, slug, n),
-      dateText: c.publishedAt || c.createdAt || ""
+      dateText: ""
     });
   }
   return out;

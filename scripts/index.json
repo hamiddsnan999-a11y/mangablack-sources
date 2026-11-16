@@ -35,7 +35,7 @@
       "id": "mangatime",
       "name": "مانجا تايم",
       "lang": "ar",
-      "version": 1,
+      "version": 2,
       "script": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/scripts/mangatime.js",
       "icon": "https://mangatime.org/brand/v2/icons/icon-192.png",
       "color": "#22C7EE",

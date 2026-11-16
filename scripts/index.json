@@ -60,6 +60,16 @@
       "icon": "https://mnga4all.com/wp-content/uploads/2026/09/cropped-IMG_20260925_170031-192x192.png",
       "color": "#C23B3B",
       "desc": "مانجا ومانهوا بتحديثات متواصلة وفصول بالمئات"
+    },
+    {
+      "id": "mangatuk",
+      "name": "مانجاتك",
+      "lang": "ar",
+      "version": 1,
+      "script": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/scripts/mangatuk.js",
+      "icon": "https://mangatuk.com/site-icons/17ca9e84/apple-touch-icon.png",
+      "color": "#3B82F6",
+      "desc": "نوع العمل صريح (مانهوا/مانجا/مانها) وتواريخ فصول دقيقة. البحث بأسماء الأعمال فقط"
     }
   ]
 }

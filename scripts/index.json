@@ -65,7 +65,7 @@
       "id": "mangatuk",
       "name": "مانجاتك",
       "lang": "ar",
-      "version": 1,
+      "version": 2,
       "script": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/scripts/mangatuk.js",
       "icon": "https://mangatuk.com/site-icons/17ca9e84/apple-touch-icon.png",
       "color": "#3B82F6",

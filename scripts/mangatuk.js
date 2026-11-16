@@ -5,7 +5,7 @@ var source = {
   name: "مانجاتك",
   lang: "ar",
   baseUrl: "https://mangatuk.com",
-  version: 1
+  version: 2
 };
 
 var SERIES = "series";   // path segment of a work page, e.g. "series"

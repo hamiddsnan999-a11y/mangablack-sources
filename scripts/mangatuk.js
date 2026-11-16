@@ -200,6 +200,9 @@ function chapters(url, mangaId) {
   for (var i = 0; i < arr.length; i++) {
     var c = arr[i];
     if (c.deletedAt) continue;
+    // فصول إعلانية وهمية (مثل رقم 100000 "طريقة فتح الفصول المقفولة") ليست فصولاً حقيقية
+    var numChk = parseFloat(c.number);
+    if (isNaN(numChk) || numChk < 0 || numChk >= 10000) continue;
     if (c.coinValue && c.coinValue > 0) {
       var s = c.coinLockStartsAt ? Date.parse(c.coinLockStartsAt) : 0, e = c.coinLockEndsAt ? Date.parse(c.coinLockEndsAt) : 0;
       if (!s || s <= now) { if (!e || e > now) continue; }

@@ -6,28 +6,40 @@
       "name": "سبارك مانجا",
       "lang": "ar",
       "version": 1,
-      "script": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/scripts/spark.js"
+      "script": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/scripts/spark.js",
+      "icon": "https://sparkio.manga-spark.net/wp-content/app/mangaspark/192spark.png",
+      "color": "#2FBF9B",
+      "desc": "أكبر مكتبة مانجا ومانهوا مترجمة، وتحديثات يومية"
     },
     {
       "id": "mangalik",
       "name": "مانجا ليك",
       "lang": "ar",
       "version": 2,
-      "script": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/scripts/mangalik.js"
+      "script": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/scripts/mangalik.js",
+      "icon": "https://io.mangalik.net/wp-content/app/lekmanganet/512.png",
+      "color": "#D32F2F",
+      "desc": "عشرات الآلاف من الأعمال، مع أنواع مؤكدة من الموقع"
     },
     {
       "id": "azora",
       "name": "أزورا",
       "lang": "ar",
       "version": 3,
-      "script": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/scripts/azora.js"
+      "script": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/scripts/azora.js",
+      "icon": "https://azorafly.com/apple-touch-icon.png",
+      "color": "#F2C418",
+      "desc": "مانهوا ومانجا بأحدث الفصول المفتوحة"
     },
     {
       "id": "mangatime",
       "name": "مانجا تايم",
       "lang": "ar",
       "version": 1,
-      "script": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/scripts/mangatime.js"
+      "script": "https://raw.githubusercontent.com/hamiddsnan999-a11y/mangablack-sources/main/scripts/mangatime.js",
+      "icon": "https://mangatime.org/brand/v2/icons/icon-192.png",
+      "color": "#22C7EE",
+      "desc": "مانجا ومانهوا ومانها وويبتون وكوميكس بتصنيف دقيق"
     }
   ]
 }
